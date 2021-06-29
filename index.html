@@ -3,17 +3,18 @@
     <head>
         <title>my website</title>
     </head>
-
-    <body>
-        <img src="download.png" alt="">
-        <p>enter username and password</p>
+    <body onload="init()" id="div1">
+        <script src="code.js"></script>
+        <p>add item</p>
         <form>
-            <input type="text" id="lname" name="lname"><br>
-            <input type="text" id="demo" name="ref"><br>
+            <input type="text" id="add" name="lname"><br>
         </form>
-        <button type="button" id="">submit</button>
+        <p>remove item</p>
+        <form>
+            <input type="text" id="removeid" name="ref"><br>
+        </form>
+        <input type="button" id="sm" value="submit">
+        <input type="button" id="rm" value="remove">
     </body>
-    <script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
+ 
 </html>
