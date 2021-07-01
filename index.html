@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>my website</title>
+        <title>to-do list</title>
+        <link rel="stylesheet" href="css.css">
     </head>
     <body onload="init()" id="div1">
+        <div id="t"></div> 
         <script src="code.js"></script>
+        <img src="images/download.png" alt="html5">
+        <p id="main">this is a to do list</p>
         <p>add item</p>
         <form>
             <input type="text" id="add" name="lname"><br>
         </form>
+        <input type="button" id="sm" value="submit">
         <p>remove item</p>
         <form>
             <input type="text" id="removeid" name="ref"><br>
         </form>
-        <input type="button" id="sm" value="submit">
+        
         <input type="button" id="rm" value="remove">
+        <input type="button" id="rm_all" value="remove all">
     </body>
  
 </html>
