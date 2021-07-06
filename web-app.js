@@ -7,6 +7,9 @@ function init () {
     
     let n=0;
     function subm(){
+
+        
+
         let v=ById("add").value;
         const para=document.createElement("li");
         const node=document.createTextNode(''+n+':'+v);
@@ -21,8 +24,16 @@ function init () {
         para.appendChild(db);
         ById("div1").appendChild(para);
         used.push(n)
+        const na=n;
+        ById('b'+na).addEventListener("click",del2);
         n=n+1;
     }
+    function del2(event){
+        let id=event.srcElement.id;
+        del_by_item(id)
+        del_by_item(id.replace('b',''))
+    }
+    
     function del_by_item(v){
         let i=ById(v);
         if (i!=null){
