@@ -1,2 +1,1 @@
-# hello_world
-hi there
+# simple-task-app
